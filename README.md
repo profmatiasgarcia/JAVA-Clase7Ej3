@@ -1,2 +1,11 @@
 # JAVA-Clase7Ej3
-Ejemplo 3 del Apunte de JAVA Clase 7 
+<p>Ejemplo 3 del Apunte de JAVA <b>Clase 7</b> </p> 
+<ul>
+  <li> Ejemplos Hibernate Framework</li>
+  <li> Relaciones
+    <li> One-to-One</li>
+    <li> One-to-Many</li>
+    <li> Many-to-One</li>
+    <li> Many-to-Many</li> 
+  </li>
+</ul>
