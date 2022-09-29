@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+<hibernate-configuration>
+    <session-factory>
+
+        <property name = "connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name = "connection.url">jdbc:mysql://localhost:3306/ormjava</property>
+        
+<!--        <property name="connection.driver_class">org.mariadb.jdbc.Driver</property> 
+        <property name="connection.url">jdbc:mariadb://localhost/ormjava</property> -->
+        
+        <property name="connection.username">Hibernate</property>
+        <property name="connection.password">Hibernate</property>       
+        
+        <property name="connection.pool_size">3</property>
+        <property name="current_session_context_class">thread</property>
+        
+        <property name ="hibernate.show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+        <property name="hbm2ddl.auto">create</property>
+        <!--<property name="hbm2ddl.auto">update</property>-->  
+        
+        <!-- mapping de las clases -->
+        
+        <mapping resource="Evento.hbm.xml" />
+        <mapping resource="Persona.hbm.xml"/>
+<!--        <mapping resource="Evento2.hbm.xml" />
+        <mapping resource="Persona2.hbm.xml"/>-->
+<!--        <mapping resource="Evento3.hbm.xml" />
+        <mapping resource="Persona3.hbm.xml"/>-->
+<!--        <mapping resource="Direccion.hbm.xml" />
+        <mapping resource="Profesor.hbm.xml"/>-->
+<!--        <mapping class="Relaciones4.ProfesorEntity" />
+        <mapping class="Relaciones4.DireccionEntity" />-->
+<!--        <mapping resource="Profesor2.hbm.xml"/>
+        <mapping resource="Direccion2.hbm.xml" />-->
+<!--        <mapping class="Relaciones5.ProfesorEntity2" />
+        <mapping class="Relaciones5.DireccionEntity2" />-->
+<!--        <mapping resource="Profesor3.hbm.xml"/>
+        <mapping resource="CorreoElectronico.hbm.xml" />-->
+<!--        <mapping class="Relaciones6.ProfesorEntity3" />
+        <mapping class="Relaciones6.CorreoElectronicoEntity" />-->
+<!--        <mapping resource="Profesor4.hbm.xml"/>
+        <mapping resource="CorreoElectronico2.hbm.xml" />-->
+<!--        <mapping class="Relaciones7.ProfesorEntity4" />
+        <mapping class="Relaciones7.CorreoElectronicoEntity2" />-->
+<!--        <mapping resource="Profesor5.hbm.xml"/>
+        <mapping resource="Materia.hbm.xml" />-->
+<!--        <mapping class="Relaciones8.ProfesorEntity5" />
+        <mapping class="Relaciones8.MateriaEntity" />-->
+<!--        <mapping resource="Profesor6.hbm.xml"/>
+        <mapping resource="CorreoElectronico3.hbm.xml"/>
+        <mapping resource="Direccion3.hbm.xml"/>
+        <mapping resource="Municipio.hbm.xml" />-->
+    </session-factory>
+</hibernate-configuration>
+
+<!--/**
+ * @author Prof Matias Garcia.
+ * <p> Copyright (C) 2022 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
+ * - con licencia GNU GPL3.
+ * <p> Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la
+ * Licencia Pública General de GNU según es publicada por la Free Software Foundation, 
+ * bien con la versión 3 de dicha Licencia o bien (según su elección) con cualquier versión posterior. 
+ * Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA, 
+ * incluso sin la garantía MERCANTIL implícita o sin garantizar la CONVENIENCIA PARA UN PROPÓSITO
+ * PARTICULAR. Véase la Licencia Pública General de GNU para más detalles.
+ * Debería haber recibido una copia de la Licencia Pública General junto con este programa. 
+ * Si no ha sido así ingrese a <a href = "http://www.gnu.org/licenses/"> GNU org </a>
+ */-->
